@@ -1,7 +1,6 @@
 namespace uc9_prj.interfaces
 {
-    public interface IPessoaFisica
-    {
+    public interface IPessoaFisica {
          bool ValidarDataNascimento(string dataNasc);
     }
 }

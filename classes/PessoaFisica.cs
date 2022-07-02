@@ -3,12 +3,9 @@ using uc9_prj.interfaces;
 namespace uc9_prj.classes
 {
     public class PessoaFisica : Pessoa, IPessoaFisica  {
-
         public string ?cpf { get; set; }
-
         public string ?dataNascimento { get; set; }
-               
-        
+                       
         
         public override float PagarImposto(float rendimento){
             throw new NotImplementedException();
@@ -24,15 +21,14 @@ namespace uc9_prj.classes
             
             return false;               
         } 
-
+        //o atributo dataNascimento recebe uma string, então precisamos converter em DateTime
         public bool ValidarDataNascimento(string dataNasc){
             DateTime dataConvertida;
 
             //verificar se a string está em um formato válido
             //o TryParse tenta converter e coloca na saida out
             if(DateTime.TryParse(dataNasc, out dataConvertida)){
-            //Console.WriteLine($"{dataConvertida}");
-
+            
                 // DateTime.Today pega a data atual do sistema
                  DateTime dataAtual = DateTime.Today;
 
