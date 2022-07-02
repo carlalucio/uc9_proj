@@ -4,17 +4,10 @@ using System.Text.RegularExpressions;
 namespace uc9_prj.classes
 {
     public class PessoaJuridica : Pessoa, IPessoaJuridica {
-        public string ?cnpj { get; private set; }
+        public string ?cnpj { get;  set; }
         public string ?razaoSocial { get;  set; } 
 
-        public void setCnpj (string cnpj) {
-
-            if(ValidarCnpj (cnpj) == true)
-                this.cnpj = cnpj;  
-            else 
-            Console.WriteLine($"CNPJ inválido");         
-
-        }    
+       
         
         
         
@@ -40,9 +33,9 @@ namespace uc9_prj.classes
                         if(cnpj.Substring(8,4)=="0001")
                         return true;
                     }
-                } 
+                }                
                 return false;                 
-            } 
+            }                         
             
             return false;
         }

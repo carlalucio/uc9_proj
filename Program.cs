@@ -5,7 +5,7 @@ PessoaJuridica novaPj = new PessoaJuridica();
 Endereco novoEndPj = new Endereco();
 
 novaPj.nome = "NomePj";
-novaPj.setCnpj("00.000.000/0001-00")  ;
+novaPj.cnpj = "00.000.000/0001-00"  ;
 novaPj.razaoSocial = "Razao Social Pj";
 novaPj.rendimento = 8000.5f;
 novoEndPj.logradouro = "Avenida Capuava";
