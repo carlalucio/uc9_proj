@@ -1,16 +1,11 @@
 using uc9_prj.interfaces;
 using System.Text.RegularExpressions;
 
-namespace uc9_prj.classes
-{
+namespace uc9_prj.classes{
     public class PessoaJuridica : Pessoa, IPessoaJuridica {
         public string ?cnpj { get;  set; }
         public string ?razaoSocial { get;  set; } 
 
-       
-        
-        
-        
         public override float PagarImposto(float rendimento){
             throw new NotImplementedException();
         }
@@ -40,7 +35,6 @@ namespace uc9_prj.classes
             return false;
         }
 
-    }
-           
+    }           
            
 }

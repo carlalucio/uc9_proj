@@ -42,8 +42,6 @@ namespace uc9_prj.classes
             }     
             return false;        
 
-        }
-
-       
+        }       
     }
 }
